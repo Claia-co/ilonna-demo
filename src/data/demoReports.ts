@@ -189,52 +189,52 @@ export const demoReports: DemoReport[] = [
 
 // Données pour le chat juridique
 export const demoLegalChat = {
-  question: "Quels sont les nouveaux salaires d'apprentis suite à la suppression d'exonérations apprentis ?",
-  answer: `Suite au décret du 1er janvier 2025, les rémunérations minimales des apprentis ont été revalorisées. Voici les nouveaux montants applicables :
+  question: "Dois-je payer les congés payés de ma salarié qui a pris un congé d'1 mois quelques jours avant de tomber gravement malade ?",
+  answer: `La Cour de cassation française a changé sa position traditionnelle au regard du droit européen :
 
-**Apprentis de moins de 18 ans :**
-- 1ère année : 27% du SMIC (soit 477,07€)
-- 2ème année : 39% du SMIC (soit 689,10€)
-- 3ème année : 55% du SMIC (soit 971,81€)
+**Si l'employé tombe malade pendant ses congés payés, il a désormais droit au report des jours de congés payés qu'il n'a pas pu réellement prendre du fait de son arrêt maladie, à condition de notifier l'arrêt à son employeur.**
 
-**Apprentis de 18 à 20 ans :**
-- 1ère année : 43% du SMIC (soit 759,77€)
-- 2ème année : 51% du SMIC (soit 901,13€)
-- 3ème année : 67% du SMIC (soit 1 183,84€)
+Avant cette décision du 10 septembre 2025, la jurisprudence française considérait que tomber malade pendant des congés ne donnait pas droit à un report. Ce n'est plus le cas aujourd'hui.
 
-**Apprentis de 21 à 25 ans :**
-- 1ère année : 53% du SMIC (soit 936,47€)
-- 2ème année : 61% du SMIC (soit 1 077,82€)
-- 3ème année : 78% du SMIC (soit 1 378,20€)
+**Autrement dit :**
+• La Cour reconnaît que malade ≠ repos effectif au sens du droit au congé.
+• Si la maladie empêche réellement de profiter des congés, ces jours doivent être reportés.
+• Les congés payés sont pris en compte pour le calcul du seuil de déclenchement des heures supplémentaires dès lors que le temps de travail est décompté à la semaine (n° 23-14.455).
 
-**Apprentis de 26 ans et plus :**
-- 100% du SMIC (soit 1 766,92€) ou du salaire minimum conventionnel s'il est plus favorable
+**Condition pratico-pratique :**
+L'unique condition que retient la Cour : **L'employeur doit être informé de l'arrêt maladie**. Ce point n'est pas purement formel : l'arrêt de travail doit être notifié pour que le droit au report s'applique.
 
-La suppression partielle des exonérations spécifiques aux apprentis signifie que les employeurs doivent désormais s'acquitter des cotisations patronales sur une assiette plus large, ce qui peut augmenter le coût total d'un apprenti pour l'entreprise.`,
+La décision est directement inspirée du droit de l'Union européenne, notamment de la jurisprudence de la CJUE, qui exige que les États garantissent un réel droit au congé payé annuel.
+
+**Ce que ça change sur le terrain :**
+✔ L'employé ne perd plus ses congés s'il tombe malade pendant une période de congés déjà posée.
+✔ L'employeur devra reporter ces jours dans les droits à congés.
+
+⚠ En revanche, cette jurisprudence est récente et sa mise en œuvre peut varier selon les services RH ou les conventions collectives. Cela dit, le principe de base est désormais établi en droit français.`,
   references: [
     {
-      article: "D6222-26 à D6222-33",
-      titre: "Rémunération minimale des apprentis",
+      article: "Cass. soc., 10 sept. 2025, n° 23-22.732",
+      titre: "Report des congés payés en cas de maladie pendant les congés",
+      type: "jurisprudence",
+      url: "https://www.legifrance.gouv.fr/juri/id/JURITEXT000042123456"
+    },
+    {
+      article: "Cass. soc., 10 sept. 2025, n° 23-14.455",
+      titre: "Congés payés et calcul des heures supplémentaires",
+      type: "jurisprudence",
+      url: "https://www.legifrance.gouv.fr/juri/id/JURITEXT000042123457"
+    },
+    {
+      article: "Directive 2003/88/CE",
+      titre: "Directive européenne sur l'aménagement du temps de travail",
+      type: "directive_ue",
+      url: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32003L0088"
+    },
+    {
+      article: "L3141-1 et suivants",
+      titre: "Dispositions relatives aux congés payés",
       type: "code_travail",
-      url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006904567"
-    },
-    {
-      article: "Décret n°2024-1234",
-      titre: "Revalorisation du SMIC au 1er janvier 2025",
-      type: "decret",
-      url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048123456"
-    },
-    {
-      article: "L6243-1",
-      titre: "Dispositions relatives à l'apprentissage",
-      type: "code_travail",
-      url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037385810"
-    },
-    {
-      article: "Circulaire DSS/5B/2024",
-      titre: "Cotisations sociales applicables aux contrats d'apprentissage",
-      type: "circulaire",
-      url: "https://www.legifrance.gouv.fr/circulaire/id/45678"
+      url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033020517"
     }
   ]
 };
